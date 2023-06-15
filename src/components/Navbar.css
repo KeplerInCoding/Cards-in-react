@@ -1,0 +1,21 @@
+.navbar {
+    padding: 1rem;
+  }
+  
+  .tab-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tab {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tab.active {
+    color: #ff6b6b;
+  }
+  

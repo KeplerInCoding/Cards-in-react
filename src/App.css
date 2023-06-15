@@ -1,0 +1,108 @@
+/* App Styles */
+.app {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.nav-tabs {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-tab {
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.nav-tab:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-tab.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Search Styles */
+.search-container {
+  padding: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+/* Filter Styles */
+.filter-container {
+  position: relative;
+}
+
+.filter-logo {
+  background-color: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+}
+
+.filter-overlay {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-logo:hover .filter-overlay {
+  display: block;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-option {
+  margin-bottom: 0.25rem;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.filter-label {
+  margin-right: 0.5rem;
+}
+
+.filter-select {
+  padding: 0.25rem;
+}
+
+/* CardList Styles */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  /* Add more card styles here */
+}

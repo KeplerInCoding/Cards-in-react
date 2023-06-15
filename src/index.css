@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+.nav-item:hover {
+  color: #000;
+}
+
+.nav-item.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  cursor: pointer;
+}
+
+.filter-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-overlay {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.filter-section {
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.filter-checkbox-label:last-child {
+  margin-right: 0;
+}
+
+.filter-checkbox-label input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.card-type {
+  font-weight: bold;
+}
+
+.card-holder {
+  font-size: 14px;
+}
+
+.card-spent,
+.card-available,
+.card-expiry,
+.card-limit,
+.card-status {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

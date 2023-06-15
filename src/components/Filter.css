@@ -1,0 +1,50 @@
+.filter-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .filter-icon {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .filter-overlay {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-container:hover .filter-overlay {
+    display: block;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-option {
+    margin-bottom: 0.25rem;
+  }
+  
+  .filter-dropdown {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .filter-label {
+    margin-right: 0.5rem;
+  }
+  
+  .filter-select {
+    padding: 0.25rem;
+  }
+  
